@@ -28,7 +28,7 @@ function scripts() {
 }
 
 function styles() {
-  return src("app/styles/" + preprocessor + "/style." + preprocessor + "")
+  return src("app/styles/" + preprocessor + "/style.scss")
     .pipe(eval(preprocessor)())
     .pipe(concat("style.min.css"))
     .pipe(
